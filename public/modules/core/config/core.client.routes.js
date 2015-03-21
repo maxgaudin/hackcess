@@ -8,11 +8,15 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 
 		// Home state routing
 		$stateProvider.
+		state('eviction', {
+			url: '/eviction',
+			templateUrl: 'modules/core/views/eviction.client.view.html'
+		}).
 		state('deposit', {
 			url: '/deposit',
 			templateUrl: 'modules/core/views/deposit.client.view.html'
 		}).
-		state('eviction', {
+		state('housing', {
 			url: '/housing',
 			templateUrl: 'modules/core/views/housing.client.view.html'
 		}).
